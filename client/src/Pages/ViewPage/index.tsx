@@ -189,7 +189,8 @@ function ReactSimplyCarouselExample() {
             key={index}
             style={{
               width: 800,
-              height: 900,
+              height: 850,
+              borderRadius:16,
               backgroundImage: `url(${slide.background})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
