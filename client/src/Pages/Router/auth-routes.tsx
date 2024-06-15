@@ -4,7 +4,7 @@ import { lazy } from 'react';
 const Home = lazy(() => import('../HomePage'));
 const Register = lazy(() => import('../Register'));
 const ViewPage = lazy(() => import('../ViewPage'));
-
+const GenIt = lazy(() => import('../GenIt/Index'));
 
 export const navigationRouts = [
   {
@@ -21,7 +21,12 @@ export const navigationRouts = [
     name: 'Register',
     path: '/view',
     component: <ViewPage />
-  }
+  },
+  {
+    name: 'Gen',
+    path: '/gen',
+    component: <GenIt />
+  },
 ];
 
 export default {
