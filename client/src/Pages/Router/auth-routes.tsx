@@ -1,21 +1,27 @@
 import { lazy } from 'react';
 
 // Importing routes
-const Home = lazy(() => import('../HomePage/index'));
-// const OnlineOrder = lazy(() => import('../Pages/OnlineOrder'));
+const Home = lazy(() => import('../HomePage'));
+const Register = lazy(() => import('../Register'));
+const ViewPage = lazy(() => import('../ViewPage'));
 
 
 export const navigationRouts = [
   {
     name: 'Home',
-    path: '/',
+    path: '/home',
     component: <Home />
+  },
+  {
+    name: 'Register',
+    path: '/',
+    component: <Register />
+  },
+  {
+    name: 'Register',
+    path: '/view',
+    component: <ViewPage />
   }
-//   {
-//     name: 'OnlineOrder',
-//     path: '/onlineorder',
-//     component: <OnlineOrder />
-//   }
 ];
 
 export default {

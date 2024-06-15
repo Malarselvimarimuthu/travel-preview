@@ -17,7 +17,7 @@ const BasicExample: React.FC<BasicExampleProps> = ({ isLoggedIn = false, userNam
       <Container>
         <Navbar.Brand href="#home">
           {/* Your logo component or image here */}
-          <img src="your-logo.png" alt="Your Logo" /> {/* Replace with your logo path */}
+          <img src="" alt="Your Logo" /> {/* Replace with your logo path */}
           <span className="ms-2">React-Bootstrap</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
