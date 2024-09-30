@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Logo from '../../assets/travel.svg'
 
 // Define the interface for the props
 interface BasicExampleProps {
@@ -17,8 +18,8 @@ const BasicExample: React.FC<BasicExampleProps> = ({ isLoggedIn = false, userNam
       <Container>
         <Navbar.Brand href="#home">
           {/* Your logo component or image here */}
-          <img src="" alt="Your Logo" /> {/* Replace with your logo path */}
-          <span className="ms-2">React-Bootstrap</span>
+          <img src={Logo} alt={"Your Logo"} style={{ height: "2rem" }} /> {/* Replace with your logo path */}
+          <span className="ms-2">   Preview It</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
